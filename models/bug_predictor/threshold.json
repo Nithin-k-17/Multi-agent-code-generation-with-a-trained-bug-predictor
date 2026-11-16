@@ -1,0 +1,10 @@
+{
+  "optimal_threshold": 0.34,
+  "best_threshold": 0.34,
+  "max_len": 512,
+  "roc_auc": 0.73746,
+  "f1": 0.75813,
+  "accuracy": 0.65205,
+  "model_name": "microsoft/codebert-base",
+  "seed": 123
+}

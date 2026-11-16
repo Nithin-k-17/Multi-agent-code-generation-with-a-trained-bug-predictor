@@ -1,0 +1,38 @@
+{
+  "n": 30,
+  "codebert_flag_rate": 0.13333333333333333,
+  "threshold": 0.7951,
+  "gating": {
+    "greedy": {
+      "pass@1": 0.4,
+      "dev_calls_per_problem": 1.0
+    },
+    "always": {
+      "pass@1": 0.43333333333333335,
+      "dev_calls_per_problem": 4.0
+    },
+    "gate:codebert": {
+      "pass@1": 0.4,
+      "dev_calls_per_problem": 1.4
+    },
+    "gate:random": {
+      "pass@1": 0.404,
+      "dev_calls_per_problem": 1.3965
+    },
+    "gate:example": {
+      "pass@1": 0.43333333333333335,
+      "dev_calls_per_problem": 2.6
+    },
+    "gate:both": {
+      "pass@1": 0.43333333333333335,
+      "dev_calls_per_problem": 3.0
+    }
+  },
+  "tie_break": {
+    "first": 0.43333333333333335,
+    "codebert": 0.4,
+    "random": 0.4231666666666667
+  },
+  "oracle_any_candidate": 0.43333333333333335,
+  "ties_with_distinct_code": 27
+}

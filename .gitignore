@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------- Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- Runtime caches and generated files
+# LLM answer cache (rebuilt automatically) and training checkpoints
+.cache/
+runs/
+data/generated/
+*.log
+
+# ---------------------------------------------------------------- Large model weights (GitHub limit is 100 MB per file)
+# The trained CodeBERT weights (~500 MB) are published as a GitHub Release asset instead;
+# see "Get the trained model" in README.md. Config, tokenizer and threshold files ARE tracked.
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+*.gguf
+
+# ---------------------------------------------------------------- Website
+# web/dist is kept on purpose so the site works without Node.js.
+web/node_modules/
+web/*.tsbuildinfo
+web/node_modules/.tmp/
+
+# ---------------------------------------------------------------- Secrets
+.env
+.env.*
+*.key
+*.pem
+
+# ---------------------------------------------------------------- OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Hugging Face Space build output (python deploy/huggingface/deploy.py)
+deploy/huggingface/space/

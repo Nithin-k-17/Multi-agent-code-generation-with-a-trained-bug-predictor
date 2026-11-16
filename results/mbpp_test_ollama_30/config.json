@@ -1,0 +1,32 @@
+{
+  "split": "mbpp_test",
+  "limit": 30,
+  "variants": [
+    "baseline",
+    "proposed",
+    "random"
+  ],
+  "llm": "openai",
+  "model": "qwen2.5-coder:1.5b",
+  "base_url": "http://localhost:11434/v1",
+  "temperature": 0.0,
+  "bug_model": null,
+  "threshold": null,
+  "threshold_file": "pipeline/threshold_calibrated.json",
+  "random_flag_rate": null,
+  "top_k_lines": 3,
+  "n_base_tests": 5,
+  "n_targeted_tests": 5,
+  "max_fix_iters": 3,
+  "timeout": 5.0,
+  "bug_device": "cpu",
+  "seed": 0,
+  "run_name": "mbpp_test_ollama_30",
+  "no_download": false,
+  "llm_name": "qwen2.5-coder:1.5b",
+  "bug": {
+    "threshold": 0.7951,
+    "random_flag_rate": 0.4006
+  },
+  "n_problems": 30
+}

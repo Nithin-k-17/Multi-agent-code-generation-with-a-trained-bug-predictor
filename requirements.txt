@@ -1,0 +1,24 @@
+# Python 3.10 - 3.13. Install with:  pip install -r requirements.txt
+# (For an NVIDIA GPU, install the CUDA build of PyTorch first: see README, step 3.)
+
+# Deep learning / models
+torch>=2.2
+transformers>=4.45,<5
+accelerate>=0.30
+safetensors>=0.4
+huggingface_hub>=0.23
+
+# Training, evaluation and statistics
+numpy>=1.26
+scikit-learn>=1.4
+
+# Code-generator LLM through Ollama or any OpenAI-compatible server
+openai>=1.40
+
+# Web API
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+
+# Optional: fast llama.cpp backend (needs a C++ compiler on some systems)
+# llama-cpp-python>=0.2.90

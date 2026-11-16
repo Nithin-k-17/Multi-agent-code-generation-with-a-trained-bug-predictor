@@ -1,0 +1,10 @@
+{
+  "threshold": 0.7951,
+  "flag_rate": 0.4006,
+  "precision": 0.7701,
+  "recall": 0.5438,
+  "val_flag_rate": 0.4006,
+  "target_flag_rate": 0.4,
+  "val_roc_auc": 0.7375,
+  "source": "data/processed/val.jsonl"
+}

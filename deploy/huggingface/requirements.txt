@@ -1,0 +1,17 @@
+# Libraries for the Hugging Face Space (CPU only).
+# CPU build of PyTorch (much smaller) and prebuilt llama.cpp wheels, so nothing has to be compiled.
+--extra-index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+--prefer-binary
+
+torch>=2.2
+transformers>=4.45,<5
+safetensors>=0.4
+huggingface_hub>=0.23
+numpy>=1.26
+scikit-learn>=1.4
+openai>=1.40
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+llama-cpp-python>=0.2.90

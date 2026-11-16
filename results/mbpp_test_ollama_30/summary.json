@@ -1,0 +1,169 @@
+{
+  "config": {
+    "split": "mbpp_test",
+    "limit": 30,
+    "variants": [
+      "baseline",
+      "proposed",
+      "random"
+    ],
+    "llm": "openai",
+    "model": "qwen2.5-coder:1.5b",
+    "base_url": "http://localhost:11434/v1",
+    "temperature": 0.0,
+    "bug_model": null,
+    "threshold": null,
+    "threshold_file": "pipeline/threshold_calibrated.json",
+    "random_flag_rate": null,
+    "top_k_lines": 3,
+    "n_base_tests": 5,
+    "n_targeted_tests": 5,
+    "max_fix_iters": 3,
+    "timeout": 5.0,
+    "bug_device": "cpu",
+    "seed": 0,
+    "run_name": "mbpp_test_ollama_30",
+    "no_download": false,
+    "llm_name": "qwen2.5-coder:1.5b",
+    "bug": {
+      "threshold": 0.7951,
+      "random_flag_rate": 0.4006
+    },
+    "n_problems": 30
+  },
+  "variants": {
+    "baseline": {
+      "n": 30,
+      "pass@1": 0.5,
+      "initial_pass@1": 0.5,
+      "selected_pass@1": null,
+      "internal_tests_passed": 0.23333333333333334,
+      "avg_fix_iterations": 2.3,
+      "avg_fixes_rejected": null,
+      "avg_fix_iterations_when_needed": 3.0,
+      "n_needed_fix": 23,
+      "repaired_initially_failing": 0.0,
+      "broke_initially_passing": 0.0,
+      "avg_iters_to_hidden_pass": null,
+      "avg_test_executions": 16.533333333333335,
+      "avg_targeted_tests": 0.0,
+      "flag_rate": null,
+      "avg_llm_calls": 2.3,
+      "avg_completion_tokens": 67.46666666666667,
+      "avg_seconds": 17.957666666666668,
+      "avg_bug_agent_seconds": 0.0
+    },
+    "proposed": {
+      "n": 30,
+      "pass@1": 0.5,
+      "initial_pass@1": 0.5,
+      "selected_pass@1": null,
+      "internal_tests_passed": 0.23333333333333334,
+      "avg_fix_iterations": 2.3,
+      "avg_fixes_rejected": null,
+      "avg_fix_iterations_when_needed": 3.0,
+      "n_needed_fix": 23,
+      "repaired_initially_failing": 0.0,
+      "broke_initially_passing": 0.0,
+      "avg_iters_to_hidden_pass": null,
+      "avg_test_executions": 18.0,
+      "avg_targeted_tests": 0.36666666666666664,
+      "flag_rate": 0.2,
+      "avg_llm_calls": 2.5,
+      "avg_completion_tokens": 59.4,
+      "avg_seconds": 11.017333333333333,
+      "avg_bug_agent_seconds": 0.8896666666666667
+    },
+    "random": {
+      "n": 30,
+      "pass@1": 0.5,
+      "initial_pass@1": 0.5,
+      "selected_pass@1": null,
+      "internal_tests_passed": 0.2,
+      "avg_fix_iterations": 2.4,
+      "avg_fixes_rejected": null,
+      "avg_fix_iterations_when_needed": 3.0,
+      "n_needed_fix": 24,
+      "repaired_initially_failing": 0.0,
+      "broke_initially_passing": 0.0,
+      "avg_iters_to_hidden_pass": null,
+      "avg_test_executions": 21.033333333333335,
+      "avg_targeted_tests": 1.3,
+      "flag_rate": 0.5,
+      "avg_llm_calls": 2.9,
+      "avg_completion_tokens": 146.33333333333334,
+      "avg_seconds": 20.18,
+      "avg_bug_agent_seconds": 0.003
+    }
+  },
+  "shared_stage": {
+    "n": 30,
+    "avg_llm_calls": 3.0,
+    "avg_seconds": 68.84066666666666,
+    "any_candidate_pass": 0.5
+  },
+  "test_quality": {
+    "raw_tests": 115,
+    "raw_test_accuracy": 0.4782608695652174,
+    "kept_tests": 115,
+    "kept_test_accuracy": 0.4782608695652174,
+    "tests_kept": 1.0
+  },
+  "comparisons": {
+    "proposed_vs_baseline": {
+      "n_paired": 30,
+      "pass@1_diff": 0.0,
+      "pass@1_diff_ci95": [
+        0.0,
+        0.0
+      ],
+      "solved_only_by_second": 0,
+      "solved_only_by_first": 0,
+      "mcnemar_p": 1.0,
+      "fix_iter_diff": 0.0,
+      "fix_iter_diff_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "random_vs_baseline": {
+      "n_paired": 30,
+      "pass@1_diff": 0.0,
+      "pass@1_diff_ci95": [
+        0.0,
+        0.0
+      ],
+      "solved_only_by_second": 0,
+      "solved_only_by_first": 0,
+      "mcnemar_p": 1.0,
+      "fix_iter_diff": 0.1,
+      "fix_iter_diff_ci95": [
+        0.0,
+        0.3
+      ]
+    },
+    "proposed_vs_random": {
+      "n_paired": 30,
+      "pass@1_diff": 0.0,
+      "pass@1_diff_ci95": [
+        0.0,
+        0.0
+      ],
+      "solved_only_by_second": 0,
+      "solved_only_by_first": 0,
+      "mcnemar_p": 1.0,
+      "fix_iter_diff": -0.1,
+      "fix_iter_diff_ci95": [
+        -0.3,
+        0.0
+      ]
+    }
+  },
+  "bug_agent": {
+    "n": 30,
+    "roc_auc": 0.6666666666666667,
+    "bug_rate_flagged": 0.3333333333333333,
+    "bug_rate_unflagged": 0.5416666666666666,
+    "recall": 0.13333333333333333
+  }
+}

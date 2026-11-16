@@ -1,0 +1,38 @@
+{
+  "val": {
+    "split": "val",
+    "tasks_count": 90,
+    "dual_label_tasks": 51,
+    "total_examples": 684,
+    "total_pass (label 0)": 296,
+    "total_fail (label 1)": 388,
+    "pass_rate": 0.4327485380116959,
+    "balanced_examples": 196,
+    "balanced_pass": 98,
+    "balanced_fail": 98
+  },
+  "train": {
+    "split": "train",
+    "tasks_count": 500,
+    "dual_label_tasks": 249,
+    "total_examples": 3831,
+    "total_pass (label 0)": 1658,
+    "total_fail (label 1)": 2173,
+    "pass_rate": 0.43278517358392066,
+    "balanced_examples": 1018,
+    "balanced_pass": 509,
+    "balanced_fail": 509
+  },
+  "test": {
+    "split": "test",
+    "tasks_count": 374,
+    "dual_label_tasks": 202,
+    "total_examples": 2869,
+    "total_pass (label 0)": 1336,
+    "total_fail (label 1)": 1533,
+    "pass_rate": 0.4656674799581736,
+    "balanced_examples": 806,
+    "balanced_pass": 403,
+    "balanced_fail": 403
+  }
+}

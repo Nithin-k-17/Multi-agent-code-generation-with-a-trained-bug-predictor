@@ -1,0 +1,28 @@
+{
+  "roc_auc": 0.7374616884926163,
+  "f1_default": 0.7540279269602578,
+  "acc_default": 0.6652046783625731,
+  "best_threshold": 0.3400000000000001,
+  "f1_opt": 0.758130081300813,
+  "acc_opt": 0.652046783625731,
+  "prec_opt": 0.6258389261744967,
+  "rec_opt": 0.961340206185567,
+  "confusion_matrix": [
+    [
+      73,
+      223
+    ],
+    [
+      15,
+      373
+    ]
+  ],
+  "pairwise_accuracy": 0.5984555984555985,
+  "num_pairs": 518,
+  "bon_tasks": 89,
+  "bon_pass_rate": 0.4606741573033708,
+  "random_baseline_pass_rate": 0.4286383092562867,
+  "epoch": 2,
+  "training_time_sec": 704.0807123184204,
+  "seed": 123
+}
