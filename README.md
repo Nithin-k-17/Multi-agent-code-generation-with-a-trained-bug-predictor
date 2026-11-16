@@ -148,7 +148,8 @@ The trained weights file `model.safetensors` (≈500 MB) is too large for a norm
 so it is attached to this repository's **Releases** page instead. Everything else (tokenizer, config,
 thresholds, dataset, results) is in the repository.
 
-1. Open the repository's **Releases** page and download `model.safetensors`.
+1. Download [`model.safetensors`](https://github.com/Nithin-k-17/Multi-agent-code-generation-with-a-trained-bug-predictor/releases/download/v1.0/model.safetensors)
+   (499 MB, from the [v1.0 release](https://github.com/Nithin-k-17/Multi-agent-code-generation-with-a-trained-bug-predictor/releases/tag/v1.0)).
 2. Put it in `models/bug_predictor/` (next to `config.json`).
 3. Run `python main.py check`. It should show `[ok] bug-predictor model`.
 
@@ -325,7 +326,7 @@ Folders created when you run things (not part of the submission): `.venv/`, `.ca
 | Agent Pipeline is very slow | Check that `python main.py check` finds the llama.cpp or Ollama backend; without them the slow PyTorch backend is used |
 | Port 8000 already in use | `python main.py serve --port 8080` and open http://localhost:8080 |
 | Training is extremely slow | Training needs a GPU; for a quick check use `python main.py train --limit 64 --epochs 1 --max-len 128` |
-| Bug-predictor model not found | Download `model.safetensors` from the Releases page into `models/bug_predictor/` (see section 3) |
+| Bug-predictor model not found | Download [`model.safetensors`](https://github.com/Nithin-k-17/Multi-agent-code-generation-with-a-trained-bug-predictor/releases/download/v1.0/model.safetensors) into `models/bug_predictor/` (see section 3) |
 
 ---
 
